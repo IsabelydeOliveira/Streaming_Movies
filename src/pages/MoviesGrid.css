@@ -1,0 +1,87 @@
+.container .title {
+  color: #fff;
+  font-size: 2.5rem;
+  text-align: left;
+  margin-left: 10%;
+}
+
+.title .query-text {
+  color: #f7d354;
+}
+
+.movies-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2rem;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.movies-container div {
+  width: 25%;
+  color: #fff;
+  margin-bottom: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* background-color: #111; */
+  padding: 1rem;
+}
+
+.movies-container div img {
+  width: 200px;
+  left: 200px;
+  justify-content: flex;
+}
+
+.movies-container div img,
+.movies-container div p {
+  margin-bottom: 1rem;
+ 
+}
+
+
+.movies-container div h2 {
+  margin-bottom: 1.5rem;
+}
+
+.movies-container div svg {
+  color: #f7d354;
+  margin-left: 20%;
+
+}
+
+.movies-container div a {
+  background-color: #f7d354;
+  border: 2px solid #f7d354;
+  border-radius: 4px;
+  color: #000;
+  padding: 1rem 0.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.movies-container div a:hover {
+  background-color: transparent;
+  color: #f7d354;
+}
+
+
+.sidbar {
+  position: relative;
+  height: 800px;
+  flex-flow: column wrap;
+  background-color: rgb(22, 21, 21);
+  width: 100px;
+  margin: 1px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  
+  
+}
+
+.icons{
+  margin: 50;
+}
