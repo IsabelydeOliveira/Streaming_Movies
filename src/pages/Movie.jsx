@@ -6,6 +6,7 @@ import {
   BsHourglassSplit,
   BsFillFileEarmarkTextFill,
 } from "react-icons/bs";
+import { IoIosHeartEmpty } from "react-icons/io";
 
 import MovieCard from "../components/MovieCard";
 
@@ -38,38 +39,38 @@ const Movie = () => {
   }, []);
 
   return (
-    <div className="movie-page">
+    <>
       {movie && (
-        <>
-          <MovieCard movie={movie} showLink={false} />
-          <p className="tagline">{movie.tagline}</p>
+        <div className="movie-page">
+          <MovieCard movie={movie} showLink={false} />  
+
+           <div className="movie-info">                    
           <div className="info">
-            <h3>
-              <BsWallet2 /> Orçamento:
-            </h3>
-            <p>{formatCurrency(movie.budget)}</p>
-          </div>
-          <div className="info">
-            <h3>
-              <BsGraphUp /> Receita:
-            </h3>
-            <p>{formatCurrency(movie.revenue)}</p>
-          </div>
-          <div className="info">
-            <h3>
-              <BsHourglassSplit /> Duração:
-            </h3>
-            <p>{movie.runtime} minutos</p>
-          </div>
           <div className="info description">
             <h3>
               <BsFillFileEarmarkTextFill /> Descrição:
             </h3>
             <p>{movie.overview}</p>
           </div>
-        </>
+            <h3>
+              <BsWallet2 /> Orçamento:
+            </h3>
+            <p>{formatCurrency(movie.budget)}</p>
+          </div>
+          
+          <div className="info">
+            <h3>
+              <BsHourglassSplit /> Duração:
+            </h3>
+            <p>{movie.runtime} minutos</p>
+          </div>
+          <IoIosHeartEmpty/>
+        </div>
+        </div>
       )}
-    </div>
+        
+      
+    </>
   );
 };
 

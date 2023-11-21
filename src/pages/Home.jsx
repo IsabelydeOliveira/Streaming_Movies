@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import MovieCard from "../components/MovieCard";
-import { IoMdHome } from "react-icons/io";
-import { FiPlus } from "react-icons/fi";
+
 
 import "./MoviesGrid.css";
 
@@ -27,27 +26,7 @@ const Home = () => {
 
   return (
     <>
-    <div className="container">
-    <div className="sidbar">
-
-
-      <ul className="icons">
-        <li className="item-menu">
-          <a href="#">
-            <span className="icon"><IoMdHome/></span>
-            <span className="txt-link"></span>
-          </a>
-        </li>
-        <li className="item-menu">
-          <a href="#">
-            <span className="icon"><FiPlus/></span>
-            <span className="txt-link"></span>
-          </a>
-        </li>
-      
-      </ul>
-      </div>
-    
+    <div className="container">     
     
       <h2 className="title">Filmes mais populares:</h2>
       <div className="movies-container">
