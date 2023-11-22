@@ -6,6 +6,7 @@ import "./App.css";
 
 function App() {
   return (
+    // Chamando os Components principais
     <div className="app-container">
       <Navbar/>
       <Sidebar/>

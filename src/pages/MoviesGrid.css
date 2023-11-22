@@ -29,13 +29,12 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 2rem;
-  /* background-color: #393838; */
   border-radius: 40px; 
 }
 
 .movies-container div img {
-  width: 200px;
-  left: 200px;
+  width: 250px;
+  left: 250px;
   justify-content: flex;
 }
 
@@ -59,11 +58,11 @@
 .movies-container div a {
   background-color: #f7d354;
   color: #000;
-  padding: 1rem 0.5rem;
+  padding: 0.5rem 0.5rem;
   text-align: center;
   font-weight: bold;
   border-radius: 10px;
-  margin-left: 10px;
+  margin-left: 110px;
 }
 
 .movies-container div a:hover {

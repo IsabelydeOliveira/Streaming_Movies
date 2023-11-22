@@ -41,6 +41,7 @@ const Movie = () => {
   return (
     <>
       {movie && (
+        //Passando mais informações do filme escolhido
         <div className="movie-page">
           <MovieCard movie={movie} showLink={false} />  
 

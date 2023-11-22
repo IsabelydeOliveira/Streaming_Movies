@@ -12,7 +12,7 @@ const Navbar = () => {
     e.preventDefault();
 
     if (!search) return;
-
+    //Definindo rota para a resultado da pesquisa
     navigate(`/search?q=${search}`, { replace: true });
     setSearch("");
   };
@@ -20,15 +20,15 @@ const Navbar = () => {
   return (
     <nav id="navbar">
       <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder="Busque um filme"
-          onChange={(e) => setSearch(e.target.value)}
-          value={search}
-        />
-        <button type="submit">
-          <BiSearchAlt2 />
-        </button>
+               <input
+                    type="text"
+                     placeholder="Busque um filme"
+                     onChange={(e) => setSearch(e.target.value)}
+                     value={search}
+                />
+              <button type="submit">
+                      <BiSearchAlt2 />
+              </button>
       </form>
     </nav>
   );

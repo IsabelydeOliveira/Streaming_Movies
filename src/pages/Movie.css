@@ -4,7 +4,7 @@
   flex-direction:row;
   width: 1000px;
   margin: 2rem auto;
-  /* background-color: aquamarine; */
+  
 }
 
 .movie-page svg {
@@ -20,7 +20,7 @@
   left: 300px;
   width: 800px;
   margin-left: 50px;
-  /* background-color: blue; */
+  
 }
 
 .movie-page .movie-card img,
